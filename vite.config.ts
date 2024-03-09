@@ -18,7 +18,6 @@ export default defineConfig({
 		splitVendorChunkPlugin()
 	],
 	define: {
-		//global: {},
 		__NAME__: JSON.stringify(packageJson.name)
 	}
 });
