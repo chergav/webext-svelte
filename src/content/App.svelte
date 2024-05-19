@@ -18,7 +18,7 @@
 			transition:fly={{ duration: 300, x: 100 }}
 		>
 			<div class="flex flex-col items-center">
-				<img class="h-16" alt="ext logo" src={getURL('/src/icons/128.png')}>
+				<img class="h-16" alt="ext logo" src={getURL('/src/icons/128.png')} />
 				<p class="text-lg">{getI18nMessage('appName')}</p>
 			</div>
 			<p>Content script</p>
@@ -47,7 +47,7 @@
 import { fly } from 'svelte/transition';
 import { getURL, getI18nMessage } from '~/shared/browser';
 
-let show = true;
+let show: boolean = true;
 
 const close = () => {
 	show = !show;

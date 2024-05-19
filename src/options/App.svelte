@@ -1,9 +1,4 @@
-<main
-	class="
-		text-neutral-900
-		dark:text-neutral-100
-	"
->
+<main class="text-neutral-900 dark:text-neutral-100">
 	<div class="p-5 w-full flex flex-col items-center gap-5">
 		<div class="flex flex-col items-center">
 			<img class="h-16" alt="ext logo" src={getURL('/src/icons/128.png')}>
