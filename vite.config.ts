@@ -1,4 +1,4 @@
-import { defineConfig, splitVendorChunkPlugin } from 'vite';
+import { defineConfig } from 'vite';
 import { fileURLToPath, URL } from 'node:url';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 import { crx } from '@crxjs/vite-plugin';
@@ -14,8 +14,7 @@ export default defineConfig({
 	},
 	plugins: [
 		crx({ manifest }),
-		svelte(),
-		splitVendorChunkPlugin()
+		svelte()
 	],
 	define: {
 		__NAME__: JSON.stringify(packageJson.name)
