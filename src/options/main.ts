@@ -1,5 +1,5 @@
 import App from '~/options/App.svelte';
-import '~/options/main.css';
+import '~/shared/styles.css';
 
 new App({
 	target: document.querySelector('#app') as HTMLDivElement

@@ -3,18 +3,13 @@
 @tailwind utilities;
 
 @layer base {
-	:root, body {
-		font-family: "Inter", system-ui, sans-serif;
-		font-optical-sizing: auto;
+	body {
+		font-family: 'Inter', system-ui, sans-serif;
+		@apply h-screen text-base bg-neutral-100 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100;
 	}
 
 	html {
 		color-scheme: light;
-	}
-
-	body {
-		min-width: 380px;
-		font-size: 1rem;
 	}
 
 	@media (prefers-color-scheme: dark) {

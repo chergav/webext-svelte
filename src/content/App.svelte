@@ -1,4 +1,4 @@
-<div class="fixed right-0 bottom-0 m-5 z-100 flex items-center text-neutral-900 dark:text-neutral-100">
+<div class="fixed right-0 bottom-0 m-5 z-100 flex items-center">
 	{#if show}
 		<div
 			class="
