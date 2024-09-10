@@ -12,7 +12,7 @@ export default defineManifest(async () => ({
 		16: 'src/icons/16.png',
 		32: 'src/icons/32.png',
 		48: 'src/icons/48.png',
-		128: 'src/icons/128.png'
+		128: 'src/icons/128.png',
 	},
 	action: {
 		default_title: '__MSG_appName__',
@@ -20,28 +20,28 @@ export default defineManifest(async () => ({
 		default_icon: {
 			16: 'src/icons/16.png',
 			24: 'src/icons/24.png',
-			32: 'src/icons/32.png'
-		}
+			32: 'src/icons/32.png',
+		},
 	},
 	content_scripts: [{
 		matches: ['<all_urls>'],
 		run_at: 'document_end',
-		js: ['src/content/main.ts']
+		js: ['src/content/main.ts'],
 	}],
 	options_ui: {
 		page: 'src/options/index.html',
-		open_in_tab: true
+		open_in_tab: true,
 	},
 	background: {
 		service_worker: 'src/background/index.ts',
-		type: 'module'
+		type: 'module',
 	},
 	web_accessible_resources: [
 		{
 			resources: ['src/icons/*'],
-			matches: ['<all_urls>']
-		}
+			matches: ['<all_urls>'],
+		},
 	],
 	permissions: [],
-	host_permissions: ['<all_urls>']
+	host_permissions: ['<all_urls>'],
 }));

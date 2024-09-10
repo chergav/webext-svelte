@@ -11,5 +11,5 @@ shadowDOM.appendChild(shadowRoot);
 document.body.appendChild(customElement);
 
 new App({
-	target: shadowRoot
+	target: shadowRoot,
 });

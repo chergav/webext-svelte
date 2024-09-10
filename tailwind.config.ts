@@ -10,14 +10,14 @@ export default {
 				'md': '768px',
 				'lg': '1024px',
 				'xl': '1280px',
-				'2xl': '1536px'
+				'2xl': '1536px',
 			},
 			fontSize: {
 				xs: ['12px', '16px'],
 				sm: ['14px', '20px'],
 				base: ['16px', '24px'],
 				lg: ['20px', '28px'],
-				xl: ['24px', '32px']
+				xl: ['24px', '32px'],
 			},
 			spacing: {
 				px: '1px',
@@ -54,16 +54,16 @@ export default {
 				64: '256px',
 				72: '288px',
 				80: '320px',
-				96: '384px'
+				96: '384px',
 			},
 			borderRadius: {
-				'sm': '2px',
+				sm: '2px',
 				DEFAULT: '4px',
-				'md': '6px',
-				'lg': '8px',
-				'xl': '12px',
-				'full': '9999px'
-			}
-		}
-	}
+				md: '6px',
+				lg: '8px',
+				xl: '12px',
+				full: '9999px',
+			},
+		},
+	},
 } satisfies Config;

@@ -7,16 +7,16 @@ import packageJson from './package.json';
 
 export default defineConfig({
 	build: {
-		target: 'esnext'
+		target: 'esnext',
 	},
 	resolve: {
-		alias: { '~': fileURLToPath(new URL('./src', import.meta.url)) }
+		alias: { '~': fileURLToPath(new URL('./src', import.meta.url)) },
 	},
 	plugins: [
 		crx({ manifest }),
-		svelte()
+		svelte(),
 	],
 	define: {
-		__NAME__: JSON.stringify(packageJson.name)
-	}
+		__NAME__: JSON.stringify(packageJson.name),
+	},
 });
