@@ -1,5 +1,6 @@
 import App from '~/content/App.svelte';
 import css from '~/content/main.css?inline';
+import { mount } from 'svelte';
 
 const customElement = document.createElement(__NAME__);
 const shadowRoot = document.createElement('div');
@@ -10,6 +11,6 @@ shadowDOM.appendChild(shadowStyle);
 shadowDOM.appendChild(shadowRoot);
 document.body.appendChild(customElement);
 
-new App({
+mount(App, {
 	target: shadowRoot,
 });

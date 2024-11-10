@@ -1,6 +1,7 @@
 import App from '~/options/App.svelte';
 import '~/shared/styles.css';
+import { mount } from 'svelte';
 
-new App({
+mount(App, {
 	target: document.querySelector('#app') as HTMLDivElement,
 });

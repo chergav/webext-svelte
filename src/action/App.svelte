@@ -25,8 +25,8 @@
 				transition-colors
 				rounded-full
 			"
+			onclick={openOptionsPage}
 			type="button"
-			on:click={openOptionsPage}
 		>Open options page</button>
 	</div>
 </main>

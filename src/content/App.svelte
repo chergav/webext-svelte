@@ -36,9 +36,9 @@
 					transition-colors
 					rounded-full
 				"
+				onclick={close}
 				title="Close"
 				type="button"
-				on:click={close}
 			>
 				Close
 			</button>
@@ -50,7 +50,7 @@
 import { fly } from 'svelte/transition';
 import { getURL, getI18nMessage } from '~/shared/browser';
 
-let show: boolean = true;
+let show: boolean = $state(true);
 
 const close = () => {
 	show = !show;
