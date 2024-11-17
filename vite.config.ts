@@ -19,4 +19,8 @@ export default defineConfig({
 	define: {
 		__NAME__: JSON.stringify(packageJson.name),
 	},
+	server: {
+		port: 3000,
+		hmr: { port: 3000 },
+	},
 });
